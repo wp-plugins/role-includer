@@ -15,7 +15,7 @@ There are lots of plugins to handle roles and capabilities, however, none seem t
 
 This plug plugin expects the complexity of capabilities to be handled by other plugins and the site Administrator, but provides any user with the 'promote_users' capability a way to handle allocation of roles.
 
-So by simply create a new role, for example "staff" and add the 'promote_users' capability to this role.  Then for this example staff members will be able to handle role assignment.  
+So by simply creating a new role, for example "staff" and adding the 'promote_users' capability to this role, all staff members will be able to handle role assignment.  
  
 
 Also ( coming soon )  if you wish to hide/mask-out a particular role from "staff" ( such as "Administrator" ) then you can exclude these using the "role excluder" plugin available over at [justinandco.com](https://justinandco.com/plugins/)
