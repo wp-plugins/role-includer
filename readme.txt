@@ -13,7 +13,7 @@ Simple settings page to allocate multiple roles to a user.
 
 There are lots of plugins to handle roles and capabilities, however, none seem to provide a simple interface for multiple roles to be assigned only.
 
-This plug plugin expects the complexity of capabilities to be handled by other plugins and the site Administrator, but provides any user with the 'promote_users' capability to handle allocation of roles.
+This plug plugin expects the complexity of capabilities to be handled by other plugins and the site Administrator, but provides any user with the 'promote_users' capability a way to handle allocation of roles.
 
 So by simply create a new role, for example "staff" and add the 'promote_users' capability to this role.  Then for this example staff members will be able to handle role assignment.  
  
