@@ -31,7 +31,8 @@ If you wish to hide/mask-out a particular role from "staff" ( such as "Administr
 
 == Screenshots ==
 
-1. 
+Screen shots are available over on [the plugin website]( https://justinandco.com/plugins/role-includer/ "Role Includer Plugin" )
+ 
 == Changelog ==
 
 Change log is maintained on [the plugin website]( https://justinandco.com/plugins/role-includer-change-log/ "Role Includer Plugin Changelog" )
