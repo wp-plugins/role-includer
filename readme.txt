@@ -11,14 +11,14 @@ Simple settings page to allocate multiple roles to a user.
 
 == Description ==
 
-There are lots of plugins to handle roles and capabilities, however, none seem to provide a simple interface for multiple roles to be assigned only.
+There are lots of plugins to handle roles and capabilities, however, none provide one a simple interface for allocating multiple roles to a user.
 
-This plug plugin expects the complexity of capabilities to be handled by other plugins and the site Administrator, but provides any user with the 'promote_users' capability a way to handle allocation of roles.
+This plug plugin expects the complexity of capabilities to be handled by the Administrator through another plugin, I'm not reproducing what is already available.  What 'Role Includer' allows is for any user with the 'promote_users' capability a way to handle allocation of roles and only that.
 
 So by simply creating a new role, for example "staff" and adding the 'promote_users' capability to this role, all staff members will be able to handle role assignment.  
  
 
-Also ( coming soon )  if you wish to hide/mask-out a particular role from "staff" ( such as "Administrator" ) then you can exclude these using the "role excluder" plugin available over at [justinandco.com](https://justinandco.com/plugins/)
+If you wish to hide/mask-out a particular role from "staff" ( such as "Administrator" ) so that staff cannot allocate the higher access level then you can exclude higher roles by using the "Role Excluder" plugin available over at [justinandco.com](https://justinandco.com/plugins/)
 
 == Installation ==
 
