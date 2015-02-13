@@ -30,6 +30,10 @@ If you wish to hide/mask-out a particular role from "staff" ( such as "Administr
 == Frequently Asked Questions ==
 
 
+== Screenshots ==
+
+1. The Settings Screen.
+
 == Changelog ==
 
 Change log is maintained on [the plugin website]( https://justinandco.com/plugins/role-includer-change-log/ "Role Includer Plugin Changelog" )
