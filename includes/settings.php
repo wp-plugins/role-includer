@@ -192,37 +192,31 @@ class ROLE_INCLUDER_Settings_Additional_Methods {
 			?><ul><?php 
 			asort( $roles );
 
-			?>
-			
-			  
-				<input type="hidden" name="action" value="<?php echo $option['name']; ?>">
 
-<?php // wp_nonce_field( $option['name'],  $option['name'] . '_nonce' ); ?>
-				
-				<?php 
-					 
-				foreach( $roles as $role_key=>$_role )
-				{
-					$id = sanitize_key( $role_key );
-					$value = get_option( $option['name'] );
+                        // this is necessary for the admin-post.php hook to find the element
+                        ?><input type="hidden" name="action" value="<?php echo $option['name']; ?>"><?php
 
-					// Render the output  
-					?> 
-				
+                        foreach( $roles as $role_key=>$_role )
+                        {
+                                $id = sanitize_key( $role_key );
+                                $value = get_option( $option['name'] );
 
-					<input type='checkbox'  
-						id="<?php echo esc_html( "user_role_{$id}" ) ; ?>" 
-						name="<?php echo esc_html( $option['name'] ); ?>[]"
-						value="<?php echo esc_attr( $role_key )	; ?>"<?php checked( in_array( $role_key, $current_user_roles ) ); ?>
-					>
-					<input type="hidden" name="user_id" value="<?php echo $user_id; ?>">					
-					
-					<?php echo esc_html( $_role['name'] ); ?></label>	
-					<br/></li>
-					<?php 
-				}?></ul>
-				 <?php // submit_button( 'Send' ); ?>
-	 
+                                // Render the output  
+                                ?> 
+
+
+                                <input type='checkbox'  
+                                        id="<?php echo esc_html( "user_role_{$id}" ) ; ?>" 
+                                        name="<?php echo esc_html( $option['name'] ); ?>[]"
+                                        value="<?php echo esc_attr( $role_key )	; ?>"<?php checked( in_array( $role_key, $current_user_roles ) ); ?>
+                                >
+                                <input type="hidden" name="user_id" value="<?php echo $user_id; ?>">					
+
+                                <?php echo esc_html( $_role['name'] ); ?></label>	
+                                <br/></li>
+                                <?php 
+                        }?></ul>
+
 			<?php
 			
 		

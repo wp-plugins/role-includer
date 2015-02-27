@@ -20,10 +20,10 @@ class RE_INCLUDER {
 	 * @return void
 	 */
 	public function __construct() {
-		
-		// hook to save the role settings into the WP roles for user.
-		add_action( 'admin_post_' . 'role_includer_enable_roles', array ( $this, 'field_editable_roles_custom_save' ) );		
-		//action=role_includer_enable_roles (this is taken from the settings page ['name'] element.
+
+            // hook to save the role settings into the WP roles for user.
+            add_action( 'admin_post_' . 'role_includer_enable_roles', array ( $this, 'field_editable_roles_custom_save' ) );		
+            //action=role_includer_enable_roles (this is taken from the settings page ['name'] element.
 
 	}
 
