@@ -6,11 +6,12 @@ if ( !defined( 'WP_UNINSTALL_PLUGIN' ) ) {
 }
 	
 if ( is_multisite( ) ) {
-    global $wpdb;
-    $blogs = $wpdb->get_results( "SELECT blog_id FROM {$wpdb->blogs}", ARRAY_a );
+
+    $blogs = wp_list_pluck( wp_get_sites(), 'blog_id' );
+
     if ( $blogs ) {
-        foreach( $blogs as $blor ) {
-            switch_to_blog( $blog['blog_id'] );
+        foreach( $blogs as $blog ) {
+            switch_to_blog( $blog );
 			role_includer_clean_database( );
         }
         restore_current_blog( );
