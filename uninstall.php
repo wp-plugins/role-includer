@@ -12,7 +12,7 @@ if ( is_multisite( ) ) {
     if ( $blogs ) {
         foreach( $blogs as $blog ) {
             switch_to_blog( $blog );
-			role_includer_clean_database( );
+            role_includer_clean_database( );
         }
         restore_current_blog( );
     }
