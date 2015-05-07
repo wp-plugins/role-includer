@@ -2,8 +2,8 @@
 Contributors: justinticktock
 Tags: roles, user, cms, groups, teams
 Requires at least: 3.5
-Tested up to: 4.1
-Stable tag: 1.0
+Tested up to: 4.2.2
+Stable tag: 1.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -11,9 +11,9 @@ Simple settings page to allocate multiple roles to a user.
 
 == Description ==
 
-There are lots of plugins to handle roles and capabilities, however, none provide one a simple interface for allocating multiple roles to a user.
+There are lots of plugins to handle roles and capabilities, however, none provide one simple interface for allocating multiple roles to a user.
 
-This plug plugin expects the complexity of capabilities to be handled by the Administrator through another plugin, I'm not reproducing what is already available.  What 'Role Includer' allows is for any user with the 'promote_users' capability a way to handle allocation of roles and only that.
+This plugin expects the complexity of capabilities to be handled by the Administrator through another plugin, I'm not reproducing what is already available.  What 'Role Includer' allows is for any user with the 'promote_users' capability a simple way to handle allocation of roles and only that.
 
 So by simply creating a new role, for example "staff" and adding the 'promote_users' capability to this role, all staff members will be able to handle role assignment.  
  
